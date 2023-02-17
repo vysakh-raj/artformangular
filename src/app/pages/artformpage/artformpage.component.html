@@ -1,0 +1,19 @@
+<body >
+  <div class="container">
+    <div class="row">
+      <div class="col" *ngFor="let i of artform">
+        <div class="card" style="width: 18rem; height: 35rem;" >
+          <img class="card-image-top" src="{{i.images}}" alt="" height="200">
+          <div class="card-body">
+            <h5 class="card-title">{{i.name}}</h5>
+            <p class="card-text" style="height:80px">{{i.description}}</p>
+            <!-- <a href="#" class="btn btn-primary">view more</a> -->
+          </div>
+            <button (click)="gotoHere(i.id)" class="btn btn-outline-primary">view more</button>       
+        </div>
+  
+      </div>
+    </div>
+  
+  </div>
+  </body>
